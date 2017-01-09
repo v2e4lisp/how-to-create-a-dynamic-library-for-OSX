@@ -7,7 +7,7 @@ Our simple library code:
 
 Our test client code which uses the library :
 
-* main.c
+* client.c
 
 The process is as followed:
 
