@@ -11,10 +11,10 @@ Our test client code which uses the library :
 
 The process is as followed:
 
-1. `gcc -c -Wall -fpic hello.c` will generate a object file `hello.o`
+1. `gcc -c -Wall -fpic hello.c` generates a object file `hello.o`
 2. `gcc -shared -o libhello.dylib hello.o` creates the shared library
-3. `mv libhello.dylib /usr/local/lib` move the libaray to one of the standard dynamic load paths.
-4. `gcc client.c -o /tmp/hello_client -lhello` compile the client code.
+3. `mv libhello.dylib /usr/local/lib` moves the libaray to one of the standard dynamic load paths.
+4. `gcc client.c -o /tmp/hello_client -lhello` compiles the client code.
 
 Then you can run the client code by `/tmp/hello_client` and it will print out "hello form C".
 
